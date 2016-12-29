@@ -1,0 +1,4 @@
+#!/bin/bash
+RESOLVER_NAME=${RESOLVER_NAME:-"soltysiak"}
+
+/usr/sbin/dnscrypt-proxy --local-address=0.0.0.0:2053 --resolvers-list=/usr/share/dnscrypt-proxy/dnscrypt-resolvers.csv --resolver-name=${RESOLVER_NAME}
