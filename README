@@ -1,0 +1,5 @@
+To run dnscrypt-proxy:
+docker run -d -p 2053:2053/tcp -p 2053:2053/udp --name dnscrypt robylabs/dnscrypt:latest
+
+To use another resolver (okturtles) instead of default:
+docker run -d -e RESOLVER_NAME=okturtles -p 2053:2053/tcp -p 2053:2053/udp --name dnscrypt robylabs/dnscrypt:latest
